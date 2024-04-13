@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #card {
+            padding: 2%;
+            border-radius: 5px;
+            border: 2px solid black;
+            width: auto;
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            & img{
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <input id="name_em" type="text" placeholder="Ingrese el nombre de la empresa">
+
+    <select name="hola" id="ss">
+        <option value="0">Codicore SAC</option>
+    </select>
+
+    <button onclick="realizarSolicitud()">Realizar Solicitud</button>
+    <div style="display: flex;">
+        <div id="card">
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
